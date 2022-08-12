@@ -1,31 +1,37 @@
 {
   "name": "craftcms/commerce-postfinance",
-  "description": "",
+  "description": "PostFinance for Craft Commerce",
   "type": "craft-plugin",
-  "keywords": ["some", "keywords", "here"],
+  "keywords": [
+    "postfinance",
+    "commerce",
+    "craftcms",
+    "yii2"
+  ],
   "license": "MIT",
   "authors": [
     {
-      "name": "Developer Name",
-      "homepage": "https://developer-website.tld"
+      "name": "SS4U",
+      "homepage": "https://ss4u.com"
     }
   ],
   "support": {
-    "email": "email@developer-website.tld",
-    "issues": "https://github.com/developer/repo/issues?state=open",
-    "source": "https://github.com/developer/repo",
-    "docs": "https://github.com/developer/repo/blob/master/README.md"
+    "email": "yamunaprasath@softsolutions4u.info",
+    "issues": "https://github.com/yamunanagu/plugin",
+    "source": "https://github.com/yamunanagu/plugin",
+    "docs": "https://github.com/yamunanagu/plugin",
+    "rss": "https://github.com/yamunanagu/plugin"
   },
   "require": {
-    "craftcms/cms": "^3.1.0"
+    "craftcms/cms": "^3.7.0"
   },
   "autoload": {
     "psr-4": {
-      "namespace\\prefix\\": "src/"
+       "craft\\commerce\\postfinance\\": "src/"
     }
   },
   "extra": {
-    "name": "Postfinance",
-    "handle": "my-plugin-handle"
+    "name": "PostFinance for Craft Commerce",
+    "handle": "commerce-postfinance"
   }
 }
