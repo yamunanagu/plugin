@@ -19,11 +19,12 @@
     "email": "yamunaprasath@softsolutions4u.info",
     "issues": "https://github.com/yamunanagu/plugin",
     "source": "https://github.com/yamunanagu/plugin",
-    "docs": "https://github.com/yamunanagu/plugin",
+    "docs": "https://github.com/yamunanagu/plugin/blob/master/README.md",
     "rss": "https://github.com/yamunanagu/plugin"
   },
   "require": {
-    "craftcms/cms": "^3.7.0"
+    "craftcms/cms": "^3.7.0",
+    "postfinancecheckout/sdk": "3.1.1"
   },
   "autoload": {
     "psr-4": {
