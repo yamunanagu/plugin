@@ -1,5 +1,11 @@
 <?php
+
 namespace craft\commerce\postfinance;
+
+use craft\commerce\services\Gateways;
+use craft\commerce\postfinance\gateways\Gateway;
+use craft\events\RegisterComponentTypesEvent;
+use yii\base\Event;
 
 class Plugin extends \craft\base\Plugin
 {
@@ -7,6 +13,12 @@ class Plugin extends \craft\base\Plugin
     {
         parent::init();
 
-        // Custom initialization code goes here...
+        Event::on(
+            Gateways::class,
+            Gateways::EVENT_REGISTER_GATEWAY_TYPES,
+            function(RegisterComponentTypesEvent $event) {
+                $event->types[] = Gateway::class;
+            }
+        );
     }
 }
